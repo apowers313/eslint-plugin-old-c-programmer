@@ -1,0 +1,49 @@
+{
+  "name": "eslint-plugin-old-c-programmer",
+  "version": "0.0.0",
+  "description": "An opinionated eslint plugin for grumpy old men that grew up on the C programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apowers313/eslint-plugin-old-c-programmer.git"
+  },
+  "keywords": [
+    "eslint",
+    "plugin",
+    "eslintplugin"
+  ],
+  "author": "Adam Powers <apowers@ato.ms>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apowers313/eslint-plugin-old-c-programmer/issues"
+  },
+  "homepage": "https://github.com/apowers313/eslint-plugin-old-c-programmer#readme",
+  "dependencies": {
+    "eslint-plugin-jsdoc": "^30.7.7",
+    "eslint-plugin-mocha": "^8.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0",
+    "is-ci": "^2.0.0",
+    "pinst": "^2.0.0",
+    "standard-version": "^9.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+
+}
