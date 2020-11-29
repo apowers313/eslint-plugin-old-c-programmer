@@ -21,10 +21,6 @@
     "url": "https://github.com/apowers313/eslint-plugin-old-c-programmer/issues"
   },
   "homepage": "https://github.com/apowers313/eslint-plugin-old-c-programmer#readme",
-  "dependencies": {
-    "eslint-plugin-jsdoc": "^30.7.7",
-    "eslint-plugin-mocha": "^8.0.0"
-  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -35,7 +31,9 @@
     "standard-version": "^9.0.0"
   },
   "peerDependencies": {
-      "eslint": ">=7.13.0"
+    "eslint": ">=7.13.0",
+    "eslint-plugin-jsdoc": "^30.7.7",
+    "eslint-plugin-mocha": "^8.0.0"
   },
   "husky": {
     "hooks": {
