@@ -106,7 +106,7 @@ const baseConfig = {
         "arrow-parens": ["error", "always"],
         // "require-await": "error", // annoying for API calls that don't contain await
         "prefer-rest-params": "error",
-        "prefer-destructuring": "error",
+        "prefer-destructuring": ["error", {"object": true, "array": false}],
         "prefer-spread": "error",
         "no-useless-rename": "error",
         "no-var": "error",
