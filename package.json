@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-old-c-programmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An opinionated eslint plugin for grumpy old men that grew up on the C programming language",
   "main": "index.js",
   "scripts": {
